@@ -32,23 +32,23 @@ public class ConnectFourTest{
         ConnectFour c = new ConnectFour();
 		try{
 			c.dropToken(2);
-			//assertEquals(ConnectFour.Location.RED, c.getTopOfColumn(2));
-			//assertEquals(1, c.getHeightOfColumn(2));
+			assertEquals(ConnectFour.Location.RED, c.getTopOfColumn(2));
+			assertEquals(1, c.getHeightOfColumn(2));
 			c.dropToken(2);
-			//assertEquals(ConnectFour.Location.BLACK, c.getTopOfColumn(2));
-			//assertEquals(2, c.getHeightOfColumn(2));
+			assertEquals(ConnectFour.Location.BLACK, c.getTopOfColumn(2));
+			assertEquals(2, c.getHeightOfColumn(2));
 			c.dropToken(2);
-			//assertEquals(ConnectFour.Location.RED, c.getTopOfColumn(2));
-			//assertEquals(3, c.getHeightOfColumn(2));
+			assertEquals(ConnectFour.Location.RED, c.getTopOfColumn(2));
+			assertEquals(3, c.getHeightOfColumn(2));
 			c.dropToken(2);
-			//assertEquals(ConnectFour.Location.BLACK, c.getTopOfColumn(2));
-			//assertEquals(4, c.getHeightOfColumn(2));
+			assertEquals(ConnectFour.Location.BLACK, c.getTopOfColumn(2));
+			assertEquals(4, c.getHeightOfColumn(2));
 			c.dropToken(2);
-			//assertEquals(ConnectFour.Location.RED, c.getTopOfColumn(2));
-			//assertEquals(5, c.getHeightOfColumn(2));
+			assertEquals(ConnectFour.Location.RED, c.getTopOfColumn(2));
+			assertEquals(5, c.getHeightOfColumn(2));
 			c.dropToken(2);
-			//assertEquals(ConnectFour.Location.BLACK, c.getTopOfColumn(2));
-			//assertEquals(6, c.getHeightOfColumn(2));
+			assertEquals(ConnectFour.Location.BLACK, c.getTopOfColumn(2));
+			assertEquals(6, c.getHeightOfColumn(2));
 			c.dropToken(2);
 		}catch(ColumnFullException e){
 			
