@@ -1,5 +1,4 @@
 package edu.jsu.mcis;
-
 import java.io.*;
 import java.util.*;
 
@@ -44,13 +43,15 @@ public class ConnectFour {
 		mark ++;
 		for (int i = 5; i >= 0; i--)
 		{
-			if(board[i][column] == Location.EMPTY && redTurn == true){
+			if(board[i][column] == Location.EMPTY && redTurn == true)
+			{
 				board[i][column] = Location.RED;
 				TOP = i;
 				redTurn = false;
 				break;
 			}
-			else if(board[i][column] == Location.EMPTY && redTurn == false){
+			else if(board[i][column] == Location.EMPTY && redTurn == false)
+			{
 				board[i][column] = Location.BLACK;
 				TOP = i;
 				redTurn = true;
